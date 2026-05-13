@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Edit, Trash2, Star, Plus } from 'lucide-react';
 
-const API_URL = import.meta.env.MODE === 'development' 
-  ? 'http://localhost:5000/api' 
-  : 'https://your-production-domain.com/api'; // Replace with actual Prod URL
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 export default function Dashboard() {
   const [blogs, setBlogs] = useState([]);
