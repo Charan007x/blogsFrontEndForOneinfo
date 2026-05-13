@@ -11,10 +11,12 @@ function App() {
         <aside className="w-64 bg-white border-r border-slate-200 flex flex-col shadow-sm z-20">
           <div className="h-20 flex items-center px-6 border-b border-slate-100">
             <div className="flex items-center gap-3">
-              <div className="bg-gradient-to-tr from-indigo-600 to-purple-600 p-2 rounded-xl shadow-md shadow-indigo-200">
-                <PenSquare size={20} className="text-white" strokeWidth={2.5}/>
-              </div>
-              <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-600 tracking-tight">
+              <img 
+                src="/oneinfoLOGO.png" 
+                alt="OneInfo Logo" 
+                className="w-8 h-8 rounded-lg drop-shadow-sm" 
+              />
+              <h1 className="text-3xl font-bebas bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-600 tracking-tight mt-1">
                 OneInfo
               </h1>
             </div>
@@ -62,7 +64,7 @@ function App() {
         {/* Main Content Area */}
         <main className="flex-1 flex flex-col items-stretch overflow-y-auto w-full relative scroll-smooth">
           <header className="h-20 bg-white/70 backdrop-blur-xl border-b border-slate-200 flex items-center px-8 justify-between sticky top-0 z-10 w-full">
-            <h2 className="text-xl font-bold text-slate-800 tracking-tight">Overview</h2>
+            <h2 className="text-2xl font-bebas text-slate-800 tracking-tight mt-1">Overview</h2>
             
             <div className="flex items-center gap-4">
                <div className="flex items-center gap-3 bg-white border border-slate-200 py-1.5 px-3 rounded-full shadow-sm">

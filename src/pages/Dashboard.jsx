@@ -49,7 +49,7 @@ export default function Dashboard() {
   return (
     <div className="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
       <div className="p-6 border-b border-slate-200 flex justify-between items-center bg-slate-50/50">
-        <h3 className="text-lg font-bold text-slate-800">All Blog Posts</h3>
+        <h3 className="text-2xl font-bebas text-slate-800 tracking-wide mt-1">All Blog Posts</h3>
         <Link 
           to="/editor" 
           className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-all shadow-md hover:shadow-lg"

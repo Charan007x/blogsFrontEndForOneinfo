@@ -141,7 +141,7 @@ export default function Editor() {
           <Link to="/" className="p-2 text-gray-500 hover:bg-gray-100 rounded-lg">
             <ArrowLeft size={20} />
           </Link>
-          <h2 className="text-2xl font-bold text-gray-800">
+          <h2 className="text-3xl font-bebas text-gray-800 tracking-wide mt-1">
             {isEditing ? 'Edit Post' : 'Create New Post'}
           </h2>
         </div>
