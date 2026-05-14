@@ -13,7 +13,8 @@ const PricingConfig = () => {
 
   const fetchPricing = async () => {
     try {
-      const { data } = await axios.get('/api/pricing');
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      const { data } = await axios.get(`${API_URL}/pricing`);
       if (data && data.plans && data.plans.length > 0) {
         // Sort to ensure order 1, 2, 3
         const sortedPlans = [...data.plans].sort((a, b) => a.id - b.id);
@@ -58,7 +59,8 @@ const PricingConfig = () => {
     setError('');
     
     try {
-      await axios.put('/api/admin/pricing', { plans });
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      await axios.put(`${API_URL}/admin/pricing`, { plans });
       setMessage('Pricing updated successfully!');
       fetchPricing(); // Refetch to get updated database versions
     } catch (err) {
