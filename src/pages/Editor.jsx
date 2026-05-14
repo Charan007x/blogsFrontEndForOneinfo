@@ -141,7 +141,7 @@ export default function Editor() {
           <Link to="/" className="p-2 text-gray-500 hover:bg-gray-100 rounded-lg">
             <ArrowLeft size={20} />
           </Link>
-          <h2 className="text-3xl font-bebas text-gray-800 tracking-wide mt-1">
+          <h2 className="text-3xl font-bebas tracking-tight text-slate-800 mt-1">
             {isEditing ? 'Edit Post' : 'Create New Post'}
           </h2>
         </div>
@@ -159,7 +159,7 @@ export default function Editor() {
         {/* Main Content Form */}
         <div className="lg:col-span-2 space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">Primary Info</h3>
+            <h3 className="text-lg font-semibold text-slate-800 border-b pb-2">Primary Info</h3>
             
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Title</label>
@@ -184,7 +184,7 @@ export default function Editor() {
 
           {/* Dynamic Content Builder */}
           <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">Content Blocks</h3>
+            <h3 className="text-lg font-semibold text-slate-800 border-b pb-2">Content Blocks</h3>
             
             <div className="space-y-4">
               {content.map((block, index) => (
@@ -273,7 +273,7 @@ export default function Editor() {
         {/* Sidebar Settings Form */}
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800 border-b pb-2">Settings</h3>
+            <h3 className="text-lg font-semibold text-slate-800 border-b pb-2">Settings</h3>
             
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
@@ -327,7 +327,7 @@ export default function Editor() {
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 " >
-            <h3 className="text-lg font-semibold text-gray-800 border-b pb-2 mb-4">Cover Image</h3>
+            <h3 className="text-lg font-semibold text-slate-800 border-b pb-2 mb-4">Cover Image</h3>
             
             {formData.imageUrl && !imageFile && (
               <div className="mb-4">
